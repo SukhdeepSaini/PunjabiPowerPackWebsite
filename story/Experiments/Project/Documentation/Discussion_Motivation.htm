@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Discussion Motivation</title>
+<link type="text/css" rel="stylesheet" href="../../../../css/ProjectCss/Documentation.css" />
+</head>
+<body>
+<img src="../../../../images/MyWebImages/MyCompanyLogo.png" width="100%" height="200px">
+<h1 id="header">Motivation.aspx</h1>
+
+<h1>Flow of Control and Data</h1>
+<img src="../../../../images/MyWebImages/umlMotivation.jpg" width="100%" height="400px">
+
+<h2>The diagram above explains how a search query for a bodybuilding Motivational Videos is executed. Below are the sequence of Events.</h2>
+<ol>
+<li>User types in the Video name that they wants to search on the Motivation page.</li>
+<li>Motivation.aspx calls the parser with the provided search query to call the Youtube Search Webservice.</li>
+<li>The Parser Returns data i.e. Video details, after parsing the response of the webservice.</li>
+<li>Motivation.aspx displays the Videos tags and the links to the corresponding  videos on youtube as per the user search query.</li>
+</ol>
+
+<h1>Sample Input</h1>
+<p>Search Keyword = <strong>Bodybuilding Motivation</strong></p>
+
+<h1>Output Screen</h1>
+<img src="../../../../images/MyWebImages/motivation.png" width="100%" height="400px">
+
+<h3>DATA</h3>
+<p>Youtube Search API</p>
+
+<h3>Further Action</h3>
+<p>Users can now watch the videos they have searched for by clicking on the thumbnail or the link for the video displayed on
+the Motivation page.</p>
+
+<h3>Future Actions</h3>
+<p>Currently the User is redirected to youtube.com for watching the video when user clicks on the link for a particular video.
+I will be modifying the code to embed the iframe on the page so that user will be able to watch the video on Motivation page.</p>
+</body>
+</html>

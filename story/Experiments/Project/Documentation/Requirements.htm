@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Project Requirements</title>
+<title>Abstract</title>
+
+
+ <link type="text/css" rel="stylesheet" href="../../../../css/ProjectCss/Documentation.css" />
+</head>
+<body>
+<img src="../../../../images/MyWebImages/MyCompanyLogo.png" width="100%" height="200px">
+<h1 id="header">Project Requirements</h1>
+
+<h2>Functional Requirements</h2>
+<ul>
+<li><strong>login and account : </strong> Currently there is only one active account and the feature for creating additional account is disabled as per the instructors
+notice. I have written the specified function for registering new user and this functionality can be added in future. User can only make purchase
+of items after successfull login.All other features of the website can be accessed as a guest user and does not require login.</li>
+<br />
+<li><strong>Purchase of items : </strong> Users should be successfully able to purchase single or multiple products using the website.</li>
+<br />
+<li><strong> Get Workout routines : </strong> Users should be able to successfully check the information on workout routines using the website. They should be able to customize their plans as per their requirements.</li>
+<br />
+<li><strong>Diet Information and Recipes : </strong> User can get healthy food recipes using the website and can get information on the nutrients present in each of the recipe.</li>
+<br />
+<li><strong>Able to read fitness Articles : </strong> User should be able to read the fitness motivational articles on website by using the search facility.</li>
+<br />
+<li><strong>Watch Videos : </strong> Users should be able to watch fitness motivational videos and excercise videos on the website.</li>
+
+</ul>
+
+
+<h2>Non Functional Requirements</h2>
+<ul>
+<li><strong>Availability :</strong> The website should be readily available to users whenever they try to log in to the account or trying accessing it as a guest user. Availability is one of the very obvious yet very important requirements for any system. Users can try to make a purchase or check their workout schedule at any point of time which implies that the data stored on the server should always be available.</li>
+<br />
+<li><strong>Multiple Users :</strong> The system should be able to handle multiple user logins synchronously.Multiple user logins at once should not make a difference in the functionality of the website.</li>
+<br />
+<li><strong>Consistency of data :</strong> Data for the different products displayed for selling should remain consistent when user buys a single or multiple products.</li>
+<br />
+<li><strong>Correctness and Verification :</strong> The workout routines and healthy diet options data displayed on the website should be checked for correctness.The data should be displayed after proper consultation from a dietician and Nutritionist.</li>
+</ul>
+
+<h2>Use Cases</h2>
+
+<ul>
+<li>
+<strong>Account Login</strong>
+<br /> 
+<strong>Description :</strong>User starts using the website using the account information provided by the adminstrator.
+<br /> 
+<strong>Preconditions :</strong> User must be having the valid credentails to login to the website.
+<br />
+<strong>Post Conditions :</strong> User is able to login successfully.
+<br />
+<strong>Step by step :</strong>
+<br />
+<strong>User :</strong> User is provided with the valid credentails to login by the Admin.
+<br />
+<strong>System :</strong> Validates the information
+<br />
+<strong>User :</strong> Submit the credentails informtion 
+<br />
+<strong>System:</strong> Verifies the credentails and provide successfull login or an error message.
+
+</li>
+
+<br />
+<br />
+
+<li>
+<strong>Buying a Product</strong>
+<br /> 
+<strong>Description :</strong>Customer buys a product from the website
+<br /> 
+<strong>Preconditions :</strong> User must be having the valid credentails to login to the website to buy a product.
+<br />
+<strong>Post Conditions :</strong> User is successfully able to buy a product.
+<br />
+<strong>Step by step :</strong>
+<br />
+<strong>User :</strong>Selects a product to buy and proceed for checkout.
+<br />
+<strong>System :</strong> Redirect user to Ebay.com for completing the transaction.
+<br />
+<strong>User :</strong> Validate his shipping and product details and order receipt on Ebay.com
+<br />
+<strong>System:</strong>Provide the user with the required information on order confirmation and shipping details.
+</li>
+
+<br />
+<br />
+
+<li>
+<strong>Searching\Selecting Workout plans:</strong>
+<br /> 
+<strong>Description :</strong>user search for a Workout plan and then select one which suits him the best.
+<br /> 
+<strong>Preconditions :</strong> user can get workout plans as a guest user.
+<br />
+<strong>Post Conditions :</strong> User is provided with required information on the workout plans available based on his search criteria.
+<br />
+<strong>Step by step :</strong>
+<br />
+<strong>User :</strong>user navigates to the workout section and search for a particular workout plan.
+<br />
+<strong>System :</strong> Provides him the informtion on the workout plans .
+</li>
+
+<br />
+<br />
+
+<li>
+<strong>Searching for Motivational Videos\Articles</strong>
+<br /> 
+<strong>Description :</strong>User can navigate to the motivation section and More section to read certain articles and watch motivational videos on the bodybuilding.
+<br /> 
+<strong>Preconditions :</strong>: None , User can or can not be registered on the website.
+<br />
+<strong>Post Conditions :</strong> Articles and Video Information is provided based on the search criteria.
+<br />
+<strong>Step by step :</strong>
+<br />
+<strong>User :</strong>Navigates to the motivational section and then to and More section to checks for information on articles or search for a particular video.
+<br />
+<strong>System :</strong> Required information on motivatinal videos and articles is displayed based on the search criteria.
+</li>
+
+<br />
+<br />
+
+<li>
+<strong>Searching for Healthy Food Recipes</strong>
+<br /> 
+<strong>Description :</strong>User can navigate to the nutrition section to get recipes for healthy food.
+<br /> 
+<strong>Preconditions :</strong>: None , User can or can not be registered on the website.
+<br />
+<strong>Post Conditions :</strong> recipes are provided based on the search criteria.
+<br />
+<strong>Step by step :</strong>
+<br />
+<strong>User :</strong>Navigates to the nutrition section to checks for to get recipes for healthy food.
+<br />
+<strong>System :</strong> recipes are displayed based on the search criteria.
+</li>
+</ul>
+
+</body>
+</html>

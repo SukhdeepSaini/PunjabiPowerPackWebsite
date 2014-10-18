@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Discussion Store</title>
+     <link type="text/css" rel="stylesheet" href="../../../../css/ProjectCss/Documentation.css" />
+</head>
+<body>
+<img src="../../../../images/MyWebImages/MyCompanyLogo.png" width="100%" height="200px">
+<h1 id="header">Store.aspx</h1>
+
+<h1>Flow of Control and Data</h1>
+<img src="../../../../images/MyWebImages/umlStore.jpg" width="100%" height="400px">
+
+<h2>The diagram above explains how a search query for a bodybuilding product is executed. Below are the sequence of Events.</h2>
+<ol>
+<li>User types in the name of supplement they wants to buy on the store page and select the number of results he wants to diplay.</li>
+<li>Store.aspx calls the parser with the provided search query to call the Ebay Search Webservice.</li>
+<li>The Parser Returns data i.e. products details, after parsing the response of the webservice.</li>
+<li>Store.aspx displays the supplement deatils corresponding to the user search query.</li>
+</ol>
+
+<h1>Sample Input</h1>
+<p>Search Keyword = <strong>optimum fat loss</strong> and number of results = <strong>5</strong></p>
+
+<h1>Output Screen</h1>
+<img src="../../../../images/MyWebImages/storesnap.png" width="100%" height="400px">
+
+<h3>DATA</h3>
+<p>Ebay Search API</p>
+
+<h3>Further Action</h3>
+<p>User can now buy a particular product by clicking on the link "Buy now" present infornt of any search result displayed.</p>
+
+<h3>Future Actions</h3>
+<p>Currently the buying of items is handled on Ebay.com . The functionality of buying and payment will be implemented on Punjabi Power Pack using Paypal API.</p>
+</body>
+</html>

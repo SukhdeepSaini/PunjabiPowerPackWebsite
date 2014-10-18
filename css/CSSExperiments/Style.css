@@ -1,0 +1,247 @@
+
+body{
+    background-image: url('../../images/MyWebImages/plain.jpg');
+    width: 70%;
+    text-align: left;  
+    
+}
+
+.body{
+    
+    margin: 0px auto;
+    width: 70%;
+    clear: both;    
+}
+
+a{
+    text-decoration:  none;    
+}
+
+.mainHeader img{
+    
+    width: 30%;
+    height: auto;
+    margin: 2% 0;
+    
+}
+
+.mainHeader nav{
+    
+    background-color: #666;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.mainHeader nav ul{   
+   list-style: none;
+   margin: 0 auto;
+
+}
+
+.mainHeader nav ul li{   
+  float: left;
+  display: inline;
+
+}
+
+.mainHeader nav a:link , .mainHeader nav a:visited {   
+  
+  color: #FFF;
+  display:  inline-block;
+  padding: 10px 25px;
+ 
+}
+
+.mainHeader nav a{   
+  
+border-radius: 5px;
+ 
+}
+
+.mainHeader nav a:hover , .mainHeader nav a:active ,.mainHeader nav .active , .mainHeader nav .active a:link{   
+  
+background-color: #CF5C3F;
+height: 20px;
+
+}
+
+.mainContent{
+    
+    line-height: 25px;
+    border-radius: 5px;
+    
+}
+
+.content{
+    
+    width: 70%;
+    float: left;
+    
+}
+
+.top-content{
+    
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 3% 2%;
+    padding: 2% 3%;
+    
+}
+
+.bottom-content{
+    
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 3% 2%;
+    padding: 2% 3%;
+    
+}
+
+.top-sidebar{
+   width: 21%;
+   background-color: #FFF;
+   border-radius: 5px;
+   float: left;
+   margin-top: 2%;
+   margin-bottom: 1%;
+   padding: 2% 3%;
+    
+}
+.middle-sidebar{
+   width: 21%;
+   background-color: #FFF;
+   border-radius: 5px;
+   float: left;
+   margin-bottom: 1%;
+   padding: 2% 3%;
+    
+}
+.bottom-sidebar{
+   width: 21%;
+   background-color: #FFF;
+   border-radius: 5px;
+   float: left;   
+   padding: 2% 3%;
+    
+}
+
+.mainFooter{
+    
+    width: 100%;
+    border-radius: 5px;
+    float: left;
+    background-color: #666;
+    height: 30px;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+        
+}
+
+.mainFooter p{
+    
+    width: 92%;
+    margin: 2% auto;
+    color: #FFF;
+    
+}
+
+
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+    
+    .body{       
+    width: 90%;
+    font-size: 95%;
+}
+
+    .mainHeader img{
+    
+    width: 100%;
+    
+}
+    
+  .mainHeader nav{
+    
+    height: 160px;
+
+
+}
+
+.mainHeader nav ul{   
+
+padding-left: 0;
+
+}
+
+.mainHeader nav ul li{   
+  text-align: center;
+  width: 100%;
+
+}  
+    
+    .mainHeader nav a:link , .mainHeader nav a:visited {   
+
+  display: block;
+
+ 
+}
+
+
+.content{
+    
+    width: 100%;
+    float: left;
+    
+}
+
+
+.top-sidebar{
+   width: 92%;
+ 
+}
+.middle-sidebar{
+ width: 92%;
+
+    
+}
+.bottom-sidebar{
+ width: 92%;
+    
+}
+
+.mainFooter{
+    
+    width: 100%;
+    border-radius: 5px;
+    float: left;
+    background-color: #666;
+    height: 30px;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+        
+}
+
+.mainFooter p{
+    
+    width: 92%;
+    margin: 2% auto;
+    color: #FFF;
+    
+}
+ 
+ 
+ .mainFooter{
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    margin-top: 3%;
+        
+}
+.mainFooter p{
+    
+    width: 100%;
+    margin : 1%;
+    
+}   
+}

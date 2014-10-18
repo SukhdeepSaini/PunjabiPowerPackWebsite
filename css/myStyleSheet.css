@@ -1,0 +1,202 @@
+﻿ 
+   
+    body {
+        
+        max-width: 100%;
+        margin: 0;
+        padding: 0;         
+    
+      /*background-image:url('images/MyWebImages/blue.jpg');
+      background-repeat:no-repeat;*/
+      max-height: 100%; 
+            
+    }
+    
+    #profilePic
+    {
+    
+    height: 300px;
+    width : 400px;    
+    border-radius: 25px;
+            
+    }
+    
+    #myPic
+    {
+    height: 300px;
+    width : 400px;    
+    float: left;   
+    margin-top: 10px;   
+    margin-left: 100px; 
+    }
+
+    #myName
+    {
+     
+     text-align:center;
+     color: black;
+     font-size: 50px;
+     font-style:italic;
+      
+    }
+    
+    #personalInfo
+    {
+       /* Can be used if needed for border purpose , removing as of now 
+        border:2px solid;
+        border-radius:50px;
+        background-color: #F0FFFF; */
+        height: 300px;
+        width: 500px;
+        float: right;
+        margin-right: 40px;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        margin-top: 5px;
+        
+    }
+    
+    .storyLink
+    {
+     color: Green;
+        
+    }
+    
+    #MyExperiments
+    {
+       clear: both;         
+       margin-left: 100px;
+       font-size: x-large;
+        
+       
+    }
+    
+        #MyExperiments a
+    {
+     
+     color: Purple;
+     text-decoration: underline;
+       
+       
+    }
+    
+    #myContactsAndReferences
+    {     
+      
+  /*   border:2px solid;
+     border-radius:50px;
+     background-color: #F0FFFF; */
+     width: 85%;
+     height: 150px;
+     margin-left: 100px;
+       
+    }
+    
+    #references
+    {
+     float:left;  
+     margin-left:50px; 
+    }
+    
+    #contacts
+    {
+     margin-right:50px;    
+     float:right; 
+  /*   border:2px solid;
+     border-radius:25px;  */
+     height: 120px;
+     width: 200px;
+     padding-left: 20px;
+    }
+    
+    .headingColor
+    {
+     
+     color: black;
+     font-style: italic;   
+        
+    }
+    
+    #fbImage
+    {
+     width: 56px;
+     margin-top: -15px;
+    }
+    
+    #copyrightProtected
+    {
+     
+     color: black;
+     font-style: italic;  
+     text-align: center;   
+    }
+ 
+ 
+ ul.master_navigation
+    {
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        list-style: none;
+        margin: 0.5em 0;
+        padding: 0;
+    }
+
+    ul.master_navigation li
+    {
+        display: inline-block;
+        padding: 0 0.5%;
+        border:2px solid;
+        border-radius:25px;
+        width: 85px;
+        height: 20px;
+        background-color: black;
+    }
+    
+    ul.master_navigation li:hover
+    {
+     background-color: orange;   
+    }
+
+    a
+    {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:visited
+    {
+        color: #88f;
+    }
+
+    a:hover
+    {
+        color: #f00;
+    }
+
+    p
+    {
+        text-align: justify;
+    }
+    
+    #Container
+    {
+     background-color: white;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     width: 80%;
+     height: 100%;
+     max-height:100%;
+     margin-left: 135px;
+     border:2px;
+     border-radius:70px;
+        
+    }
+    
+    #aboutMe
+    {
+     margin-left: 50px;   
+    }

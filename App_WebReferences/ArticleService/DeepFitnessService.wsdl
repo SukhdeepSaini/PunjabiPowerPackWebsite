@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://deepfitness.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://deepfitness.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://deepfitness.com/">
+      <s:element name="GetArticle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="articleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArticleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArticleResult" type="tns:WebArticleDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WebArticleDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ArticleID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LongDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Page" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRandomArticle">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetRandomArticleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRandomArticleResult" type="tns:WebArticleDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArticlesByTagName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tagName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArticlesByTagNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArticlesByTagNameResult" type="tns:ArrayOfWebArticleDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWebArticleDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WebArticleDetails" nillable="true" type="tns:WebArticleDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTags">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTagsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTagsResult" type="tns:ArrayOfTagDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTagDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TagDetails" nillable="true" type="tns:TagDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TagDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TagName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetArticleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArticle" />
+  </wsdl:message>
+  <wsdl:message name="GetArticleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRandomArticleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRandomArticle" />
+  </wsdl:message>
+  <wsdl:message name="GetRandomArticleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRandomArticleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArticlesByTagNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArticlesByTagName" />
+  </wsdl:message>
+  <wsdl:message name="GetArticlesByTagNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArticlesByTagNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTagsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTags" />
+  </wsdl:message>
+  <wsdl:message name="GetTagsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTagsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DeepFitnessServiceSoap">
+    <wsdl:operation name="GetArticle">
+      <wsdl:input message="tns:GetArticleSoapIn" />
+      <wsdl:output message="tns:GetArticleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomArticle">
+      <wsdl:input message="tns:GetRandomArticleSoapIn" />
+      <wsdl:output message="tns:GetRandomArticleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArticlesByTagName">
+      <wsdl:input message="tns:GetArticlesByTagNameSoapIn" />
+      <wsdl:output message="tns:GetArticlesByTagNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTags">
+      <wsdl:input message="tns:GetTagsSoapIn" />
+      <wsdl:output message="tns:GetTagsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DeepFitnessServiceSoap" type="tns:DeepFitnessServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetArticle">
+      <soap:operation soapAction="http://deepfitness.com/GetArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomArticle">
+      <soap:operation soapAction="http://deepfitness.com/GetRandomArticle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArticlesByTagName">
+      <soap:operation soapAction="http://deepfitness.com/GetArticlesByTagName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTags">
+      <soap:operation soapAction="http://deepfitness.com/GetTags" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DeepFitnessServiceSoap12" type="tns:DeepFitnessServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetArticle">
+      <soap12:operation soapAction="http://deepfitness.com/GetArticle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRandomArticle">
+      <soap12:operation soapAction="http://deepfitness.com/GetRandomArticle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArticlesByTagName">
+      <soap12:operation soapAction="http://deepfitness.com/GetArticlesByTagName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTags">
+      <soap12:operation soapAction="http://deepfitness.com/GetTags" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DeepFitnessService">
+    <wsdl:port name="DeepFitnessServiceSoap" binding="tns:DeepFitnessServiceSoap">
+      <soap:address location="http://deepfitness.com/i/api/DeepFitnessService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DeepFitnessServiceSoap12" binding="tns:DeepFitnessServiceSoap12">
+      <soap12:address location="http://deepfitness.com/i/api/DeepFitnessService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

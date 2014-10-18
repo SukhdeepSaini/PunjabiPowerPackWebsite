@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Discussion Nutrition</title>
+<link type="text/css" rel="stylesheet" href="../../../../css/ProjectCss/Documentation.css" />
+</head>
+<body>
+<img src="../../../../images/MyWebImages/MyCompanyLogo.png" width="100%" height="200px">
+<h1 id="header">Nutrition.aspx</h1>
+
+<h1>Flow of Control and Data</h1>
+<img src="../../../../images/MyWebImages/umlNutrition.jpg" width="100%" height="400px">
+
+<h2>The diagram above explains how a search query for healthy diet recipes is executed. Below are the sequence of Events.</h2>
+<ol>
+<li>User types in the name of the recipe for which he wants to get the details on Nutrition page.</li>
+<li>Nutrition.aspx calls the parser with the provided search query to call the Yummly recipe Webservice.</li>
+<li>The Parser Returns data i.e. Recipe details, after parsing the response of the webservice.</li>
+<li>Nutrition.aspx displays the Thumbnail and the links to the corresponding  recipe on yummly as per the user search query.</li>
+</ol>
+
+<h1>Sample Input</h1>
+<p>Search Keyword = <strong>Healthy Recipes</strong></p>
+
+<h1>Output Screen</h1>
+<img src="../../../../images/MyWebImages/Nutrition.png" width="100%" height="400px">
+
+<h3>DATA</h3>
+<p>Yummly Recipe Search API</p>
+
+<h3>Further Action</h3>
+<p>Users can now get the recipe details they have searched for by clicking on the link for the recipe displayed on
+the Nutrition page.</p>
+
+<h3>Future Actions</h3>
+<p>Currently the User is redirected to Yummly for reading the recipe when user clicks on the link for a particular link for recipe.
+I will be modifying the code so that user is able to see the recipe on punjabi power pack</p>
+</body>
+</html>

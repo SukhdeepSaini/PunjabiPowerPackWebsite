@@ -1,0 +1,66 @@
+﻿#leftDiv
+    {
+        float :left; 
+        background-color: Green;
+        color: White;
+        height: 100px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    
+        #rightDiv
+    {
+        float:right;
+        background-color: blue;
+        color: White;
+        height: 100px;
+        width: 500px;
+        border-radius: 20px;
+        
+    }
+    
+    #betweenDiv
+    {
+     display:inline; 
+     margin-left:20px; 
+      
+    }
+    
+    #sources
+    {
+     
+     margin-top:20px;   
+    }
+    
+    #Experiment3
+    {
+     clear: both;
+     margin-top:100px;   
+    }
+    
+    
+     #expList
+     {
+        background-color: Green;
+        width: 350px;
+       
+     }
+    
+    #expList li
+    {
+
+        display: inline;
+        padding: 0 0.5%;
+        border:2px solid;
+        border-radius:25px;
+        width: 85px;
+        height: 20px;
+        background-color: black;
+        color: White;
+     
+    }
+    
+    #expList li:hover
+    {
+     background-color: aqua;   
+    }

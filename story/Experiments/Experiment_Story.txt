@@ -1,0 +1,16 @@
+﻿../whatisnext.htm?Experiments/Experiment_Story.txt  What is Next?
+Experiment1.aspx                                    Starting with Basic HTML,CSS and Jquery
+Experiment2.aspx                                    Learning More about JQuery
+ResponsiveDesign.aspx                               Implemented Responsive Design
+Simple.aspx											Starting with Asp Controls using C#    
+API.aspx                                            Simple JSON Response
+YoutubeTest.aspx                                    Ajax ToolKit and Youtube Testing
+testDB.aspx                                         Testing Predefined Java Libraries
+AnotherYoutube.aspx									Youtube Search API
+Email.aspx											Send Free Text Messages
+Facebook.aspx									    Facebook Like and Share Plugins
+DatabaseLinq.aspx									Database Connection and Linq
+TestEbay.aspx										Ebay Search API
+MyWebService.asmx									My SOAP based Web Service
+Nutrition.aspx										Recipe Search API
+responsive.html										My Handcrafted Responsive Template
